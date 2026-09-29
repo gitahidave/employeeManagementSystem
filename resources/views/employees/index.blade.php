@@ -19,7 +19,7 @@
         <div class="card text-white bg-success shadow-sm mb-3">
             <div class="card-body">
                 <h6 class="card-title text-uppercase fs-7">Average Salary</h6>
-                <h3 class="fw-bold mb-0">${{ number_format($stats['avg_salary'], 2) }}</h3>
+                <h3 class="fw-bold mb-0">KES {{ number_format($stats['avg_salary'], 2) }}</h3>
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@
         <div class="card text-white bg-info shadow-sm mb-3">
             <div class="card-body">
                 <h6 class="card-title text-uppercase fs-7">Highest Salary</h6>
-                <h3 class="fw-bold mb-0">${{ number_format($stats['max_salary'], 2) }}</h3>
+                <h3 class="fw-bold mb-0">KES {{ number_format($stats['max_salary'], 2) }}</h3>
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
         <div class="card text-white bg-warning shadow-sm mb-3">
             <div class="card-body">
                 <h6 class="card-title text-uppercase fs-7">Lowest Salary</h6>
-                <h3 class="fw-bold mb-0">${{ number_format($stats['min_salary'], 2) }}</h3>
+                <h3 class="fw-bold mb-0">KES {{ number_format($stats['min_salary'], 2) }}</h3>
             </div>
         </div>
     </div>
@@ -98,7 +98,7 @@
                             <td>{{ $employee->email }}</td>
                             <td>{{ $employee->phone_number }}</td>
                             <td><span class="badge bg-secondary">{{ $employee->department }}</span></td>
-                            <td>${{ number_format($employee->salary, 2) }}</td>
+                            <td>KES {{ number_format($employee->salary, 2) }}</td>
                             <td class="text-center">
                                 <div class="btn-group" role="group">
                                     <a href="{{ route('employees.show', $employee) }}" class="btn btn-info btn-sm text-white" title="View">

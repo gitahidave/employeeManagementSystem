@@ -80,7 +80,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <label class="form-label">Salary ($)</label>
+                            <label class="form-label">Salary (KES)</label>
                             <input type="number" step="0.01" name="salary" class="form-control @error('salary') is-invalid @enderror" value="{{ old('salary', $employee->salary) }}">
                             @error('salary')
                                 <div class="invalid-feedback">{{ $message }}</div>

@@ -36,7 +36,7 @@
                     </div>
                     <div class="col-md-6">
                         <p class="text-muted mb-1">Salary</p>
-                        <p class="fw-semibold text-success fs-5">${{ number_format($employee->salary, 2) }}</p>
+                        <p class="fw-semibold text-success fs-5">KES {{ number_format($employee->salary, 2) }}</p>
                     </div>
                     <hr>
                     <div class="col-md-6">
